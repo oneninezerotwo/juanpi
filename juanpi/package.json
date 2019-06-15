@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "core-js": "^2.6.5",
+    "postcss-pxtorem": "^4.0.1",
     "register-service-worker": "^1.6.2",
     "vue": "^2.6.10",
     "vue-class-component": "^7.0.2",
@@ -44,22 +45,23 @@
           "*"
         ]
       }
-    },
-    "browserslist": [
-      "> 1%",
-      "last 2 versions"
-    ],
-    "gitHooks": {
-      "pre-commit": "lint-staged"
-    },
-    "lint-staged": {
-      "*.ts": [
-        "vue-cli-service lint",
-        "git add"
-      ],
-      "*.vue": [
-        "vue-cli-service lint",
-        "git add"
-      ]
     }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "vue-cli-service lint",
+      "git add"
+    ],
+    "*.vue": [
+      "vue-cli-service lint",
+      "git add"
+    ]
   }
+}
