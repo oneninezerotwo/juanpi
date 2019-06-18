@@ -13,7 +13,7 @@
                 src="https://s1.juancdn.com/bao/171127/7/0/5a1bce9f8150a16b8658e657_72x72.png"
               >首页
             </router-link>
-            <router-link class="sc-jDwBTQ fSJdS" to="https://m.juanpi.com/cate/index?select=2_1">
+            <router-link class="sc-jDwBTQ fSJdS" to="sort">
               <img
                 class="sc-gPEVay gtkfWd"
                 src="https://s1.juancdn.com/bao/171127/9/6/5a1bcef08150a176c87f92be_72x72.png"
@@ -36,6 +36,10 @@
         <router-view></router-view>
       </div>
     </div>
-    
   </div>
 </template>
+<style scoped>
+.izStSE {
+  bottom: 4px;
+}
+</style>

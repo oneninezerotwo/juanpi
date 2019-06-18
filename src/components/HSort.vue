@@ -57,7 +57,7 @@
       <!--右边栏-->
 
       <div class="list-right" style="height: 646.875px;">
-        <div id="wraper">
+        <router-link to="datails" id="wraper">
           <div
             class="third-cate"
             style="transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1); transition-duration: 0ms; transform: translate(0px, 0px) translateZ(0px);"
@@ -83,7 +83,7 @@
 
             <div class="cate-bottom"></div>
           </div>
-        </div>
+        </router-link>
       </div>
       <div style="clear: both;"></div>
     </div>
