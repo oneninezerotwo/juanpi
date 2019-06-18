@@ -165,14 +165,11 @@
       </ul>
     </div>
     <div class="goods sc-uJMKN eAzbYJ" id="indexGood">
-      <div class="sc-bbmXgH gCgGoL" v-for="(value, key ,index) in shangping" :key='index'>
+      <div class="sc-bbmXgH gCgGoL" v-for="(value, key ,index) in shangping" :key="index">
         <a class="GoodsLink" href="https://web.juanpi.com/pintuan/shop/122817328">
           <div class="sc-gGBfsJ bHohRa">
             <div class="sc-jnlKLf bYqRFU">
-              <img
-                class="sc-fYxtnH idxkID"
-                :src='value.imageurl'
-              >
+              <img class="sc-fYxtnH idxkID" :src="value.imageurl">
             </div>
             <div class="sc-tilXH cEQZgN">
               <span class="sc-ktHwxA gVLSd">
@@ -212,6 +209,7 @@ export default {
     };
   },
   created() {
+    console.log(this.$ajax);
     this.$ajax
       .get(
         "https://www.easy-mock.com/mock/5d02f1a4ba24655dd590e65d/example/adsa"
